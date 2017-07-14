@@ -1,4 +1,3 @@
-
 json.pokemon do
   json.id @pokemon.id
   json.name @pokemon.name
@@ -7,6 +6,7 @@ json.pokemon do
   json.image_url asset_path(@pokemon.image_url)
   json.moves @pokemon.moves
 end
+
 json.items @pokemon.items do |item|
   json.id item.id
   json.name item.name
